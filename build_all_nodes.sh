@@ -2,10 +2,10 @@
 
 # example :
 # to test the commands
-# ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 kerematam test
+# ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 your-name-here test
 
 # to build all images
-# ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 kerematam build
+# ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 your-name-here build
 
 config_path=$1
 node_author=$2
