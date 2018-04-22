@@ -1,0 +1,7 @@
+Name = ${node_name}
+AddressFamily = ipv4
+Interface = tun0
+Device = /dev/net/tun
+Mode = switch
+{% if not is_master == "True" %}ConnectTo = ${connect_to}{% endif %}
+

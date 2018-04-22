@@ -1,0 +1,15 @@
+version: '2'
+services:
+  tinc-hostname-app:
+    restart: always
+    image: kerematam/tinc:latest
+    ports:
+      - 655:655
+    volumes:
+      - ../config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3/node2/vpn_network/:/etc/tinc
+    devices:
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+

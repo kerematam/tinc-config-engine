@@ -1,0 +1,13 @@
+# docjer image is embed into docker image
+version: '2'
+services:
+  tinc-hostname-app:
+    # replace your private image
+    image: myname/config_5a2b0956-2401-4128-ada8-49c8fc43ddc3_node9:latest
+    ports:
+      - 655:655
+    devices:
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"

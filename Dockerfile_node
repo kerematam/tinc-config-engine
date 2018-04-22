@@ -1,0 +1,15 @@
+FROM alpine:edge
+ARG node_path
+
+RUN apk --update upgrade && \
+    apk add ca-certificates less man tinc tinc-doc bash && \
+    rm -rf /var/cache/apk/*
+
+EXPOSE 655/tcp 655/udp
+#VOLUME /etc/tinc
+COPY $node_path /etc/tinc
+#COPY config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3/node3/vpn_network /etc/tinc
+
+ENV PAGER=less
+ENTRYPOINT ["/usr/sbin/tincd", "-D"]
+CMD ["-d"]
