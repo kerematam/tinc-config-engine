@@ -4,9 +4,9 @@ Config Engine creates network configuration for the simple topology depicted on 
 ![alt text](https://raw.githubusercontent.com/kerematam/tinc-config-engine/master/images/tinc-config-engine-topology.png)
 
 
-##directory structure
+### Directory Structure
+
 ```
-.
 ├── templates/              # tinc config file templates; Jinja2 used as template engine
 │   ├── hostfile.tmpl       
 │   ├── tinc-down.tmpl
