@@ -1,6 +1,5 @@
 .*
 *.img
 !/.gitignore
-config_*
-!/config_outs
+config_outs/*
 *.priv
