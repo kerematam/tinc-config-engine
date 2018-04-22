@@ -3,6 +3,8 @@ Config Engine creates network configuration for the simple topology depicted on 
 
 ![alt text](https://raw.githubusercontent.com/kerematam/tinc-config-engine/master/images/tinc-config-engine-topology.png)
 
+
+##directory structure
 ```
 .
 ├── templates/              # tinc config file templates; Jinja2 used as template engine
