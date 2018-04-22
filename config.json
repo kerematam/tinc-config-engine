@@ -9,115 +9,115 @@
     },
     "node2": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.2",
       "node_subnet": "32"
     },
     "node3": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.3",
       "node_subnet": "32"
     },
     "node4": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.4",
       "node_subnet": "32"
     },
     "node5": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.5",
       "node_subnet": "32"
     },
     "node6": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.6",
       "node_subnet": "32"
     },
     "node7": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.7",
       "node_subnet": "32"
     },
     "node8": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.8",
       "node_subnet": "32"
     },
     "node9": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.9",
       "node_subnet": "32"
     },
     "node10": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.10",
       "node_subnet": "32"
     },
     "node11": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.11",
       "node_subnet": "32"
     },
     "node12": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.12",
       "node_subnet": "32"
     },
     "node13": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.13",
       "node_subnet": "32"
     },
     "node14": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.14",
       "node_subnet": "32"
     },
     "node15": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.15",
       "node_subnet": "32"
     },
     "node16": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.16",
       "node_subnet": "32"
     },
     "node17": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.17",
       "node_subnet": "32"
     },
     "node18": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.18",
       "node_subnet": "32"
     },
     "node19": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.19",
       "node_subnet": "32"
     },
     "node20": {
       "is_master": "False",
-      "connect_to": "amsterdam_vpn_server",
+      "connect_to": "vpn_server",
       "node_ip": "10.0.26.20",
       "node_subnet": "32"
     }
