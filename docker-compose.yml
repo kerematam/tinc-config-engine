@@ -1,6 +1,7 @@
 version: '2'
 services:
   tinc-engine:
-    image: kerematam/tinc-engine:latest
+#    image: kerematam/tinc-engine:latest
+    build: .
     volumes:
        - ./config_outs:/src/config_outs
