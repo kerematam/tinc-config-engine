@@ -15,11 +15,11 @@ Config Engine creates network configuration for the simple topology depicted on 
 │   └── tinc.conf.tmpl      # test setup with image with embedded config
 ├── images/                 # shematics
 ├── test/                   # test files (alternatively `spec` or `tests`)
-├── Dockerfile				      # Dockerfile for config generator script
-├── Dockerfile_node	        # Dockerfile to build tinc client image with embedded configuration
-├── build_all_nodes.sh		  # Build tinc docker images with embedded configuration
-├── config.json				      # configure all networks this json file
-├── docker.compose.yml		  # docker-compose file to trigger config generation
+├── Dockerfile              # Dockerfile for config generator script
+├── Dockerfile_node         # Dockerfile to build tinc client image with embedded configuration
+├── build_all_nodes.sh      # Build tinc docker images with embedded configuration
+├── config.json             # configure all networks this json file
+├── docker.compose.yml      # docker-compose file to trigger config generation
 ├── gen_config.py           # python code to generates configs
 ├── LICENSE
 └── README.md
