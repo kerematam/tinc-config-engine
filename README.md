@@ -18,7 +18,7 @@ For now it only supports simple topology depicted on image below which has one m
 │   ├── docker-compose.yml  # test setup with externally mounting config
 │   └── tinc.conf.tmpl      # test setup with image with embedded config
 ├── images/                 # shematics
-├── test/                   # test files (alternatively `spec` or `tests`)
+├── test/                   # test files
 ├── Dockerfile              # Dockerfile for config generator script
 ├── Dockerfile_node         # Dockerfile to build tinc client image with embedded configuration
 ├── build_all_nodes.sh      # Build tinc docker images with embedded configuration
