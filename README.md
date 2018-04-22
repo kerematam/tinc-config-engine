@@ -1,5 +1,7 @@
 # Tinc Config Engine
-Config Engine creates network configuration for the simple topology depicted on image below which has one master node that has public IP and multiple other tinc client nodes without public IP. This is configuration schematic, on technical background Tinc claims to setup a Mesh VPN Network where nodes directly talk to each other without traffic passing through Master Node [[1](https://www.tinc-vpn.org/)].
+Config Engine generates network configuration for all nodes from a single **config.json** file. This is efficient when you need to deploy Tinc for numerous nodes.
+
+For now it only supports simple topology depicted on image below which has one master node that has public IP and multiple other Tinc client nodes without public IP. This is configuration schematic, on technical background Tinc claims to setup a Mesh VPN Network where nodes directly talk to each other without traffic passing through Master Node [[1](https://www.tinc-vpn.org/)].
 
 ![alt text](https://raw.githubusercontent.com/kerematam/tinc-config-engine/master/images/tinc-config-engine-topology.png)
 
