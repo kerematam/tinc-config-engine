@@ -5,15 +5,15 @@ Config Engine creates network configuration for the simple topology depicted on 
 
 ```
 .
-├── templates/				      # tinc config file templates; Jinja2 used as template engine
+├── templates/              # tinc config file templates; Jinja2 used as template engine
 │   ├── hostfile.tmpl       
 │   ├── tinc-down.tmpl
 │   ├── tinc-up.tmpl
 │   └── tinc.conf.tmpl
-├── test/					          # docker-compose files to test tinc setup
-│   ├── docker-compose.yml	# test setup with externally mounting config
-│   └── tinc.conf.tmpl		  # test setup with image with embedded config
-├── images/					        # shematics
+├── test/                   # docker-compose files to test tinc setup
+│   ├── docker-compose.yml  # test setup with externally mounting config
+│   └── tinc.conf.tmpl      # test setup with image with embedded config
+├── images/                 # shematics
 ├── test/                   # test files (alternatively `spec` or `tests`)
 ├── Dockerfile				      # Dockerfile for config generator script
 ├── Dockerfile_node	        # Dockerfile to build tinc client image with embedded configuration
