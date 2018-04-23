@@ -1,7 +1,7 @@
 {
   "network": "vpn_network",
   "nodes": {
-    "vpn_server": {
+    "vpn_master_node": {
       "is_master": "True",
       "master_public_ip": "198.199.124.51",
       "node_ip": "10.0.26.1",
