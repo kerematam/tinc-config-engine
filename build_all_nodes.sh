@@ -7,6 +7,9 @@
 # to build all images
 # ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 your-name-here build
 
+# export images to image_outs folder
+# ./build_all_nodes.sh config_outs/config_5a2b0956-2201-4128-aba8-49c1fc43ddc3 your-name-here save 
+
 config_path=$1
 node_author=$2
 run_mode=$3 # set "test" or "build"
@@ -29,7 +32,13 @@ for d in $1/* ; do
 
 		if [ $run_mode == "build" ]
 		then
-			sudo docker build -f Dockerfile_node -t $node_author/$image_name --build-arg node_path=$config_path/$node_name/$network_name .
+			sudo docker build -f Dockerfile_node -t $node_author/$image_name --build-arg node_path=$config_path/$node_name/$network_name/ .
 		fi
+
+		if [ $run_mode == "save" ]
+		then
+			sudo docker save -o image_outs/$image_name.img $node_author/$image_name
+		fi
+
 	fi
 done
