@@ -17,9 +17,12 @@ run_mode=$3 # set "test" or "build"
 image_name="$(echo $config_name'_'$node_name)"
 network_name="$(ls $1/* | sed -n 2p)"
 
+# removes back slash at the end of string if exist
+path=${1%/}
 
-for d in $1/* ; do
+for d in $path/* ; do
 	node_name="$(echo "$d" | cut -d/ -f 3)"
+
 	if [ $node_name != "shared_hosts" ]
 	then
 		config_name="$(echo $config_path |cut -d/ -f 2)"
