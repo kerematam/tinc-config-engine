@@ -9,6 +9,8 @@ For now; it only supports simple topology depicted on schematic below which has 
 ### Directory Structure
 
 ```
+├── config_outs/            # configurations will be generated under this directory
+├── image_outs/             # docker images will be generted under this directory
 ├── templates/              # tinc config file templates; Jinja2 used as template engine
 │   ├── hostfile.tmpl       
 │   ├── tinc-down.tmpl
@@ -18,7 +20,6 @@ For now; it only supports simple topology depicted on schematic below which has 
 │   ├── docker-compose.yml  # test setup with externally mounting config
 │   └── tinc.conf.tmpl      # test setup with image with embedded config
 ├── images/                 # shematics
-├── test/                   # test files
 ├── Dockerfile              # Dockerfile for config generator script
 ├── Dockerfile_node         # Dockerfile to build tinc client image with embedded configuration
 ├── build_all_nodes.sh      # Build tinc docker images with embedded configuration
@@ -41,7 +42,7 @@ If you are lazy, just change `master_public_ip` variable with your server IP and
 	"master_public_ip": "198.199.124.51",
 
 
-This configuration will create 20 nodes with master node and other vpn clients connected to it. It will use IP pool from `10.0.26.1` to `10.0.26.20` for nodes.
+Sample config.json will create 20 nodes with master node and other vpn nodes connected to it. It will use IP pool from `10.0.26.1` to `10.0.26.20` for nodes.
 
 **Warning! DO NOT USE "-"  character in network name.**
 
@@ -59,20 +60,20 @@ folder :
 
 	cp -r config_outs/<config-id>/<node-name>/<netowork-name>/ /etc/tinc/
 
-Or you can with Docker file as it is shown on `test/docker-compose.yml`
+Or you can use with Docker file as it is shown on `test/docker-compose.yml`
 
 ## Create Docker Images
 If you like to create docker images for each node with embedded config inside it. You can use build all nodes script.
 
 To test command to see what commands to be issued for each config :
 
-	./build_all_nodes.sh config_outs/<config-id> <docker-name> test
+	./build_all_nodes.sh config_outs/<config-id> <your-name> test
 
-To build images locally :
+To build images :
 
 	./build_all_nodes.sh config_outs/<config-id> <docker-name> build
 
-If you like to export into docker images (in case you dont have private docker registry you migh like) :
+In case you dont have private docker registry server, you might like to share docker images manually. So to export docker images into `image_outs` folder :
 	
 	./build_all_nodes.sh config_outs/<config-id> <your-name> save
 
